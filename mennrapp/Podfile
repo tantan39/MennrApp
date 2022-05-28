@@ -7,5 +7,6 @@ target 'mennrapp' do
 
   # Pods for mennrapp
 pod 'SystemServices', '~> 2.0.1'
+pod 'DeviceGuru'
 
 end
