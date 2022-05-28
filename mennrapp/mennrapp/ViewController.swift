@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SystemServices
 
 class ViewController: UIViewController {
 
@@ -14,6 +15,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func scanButton_Pressed(_ sender: Any) {
+        print("\(SystemServices.shared().allSystemInformation)")
 
+    }
+    
 }
 
