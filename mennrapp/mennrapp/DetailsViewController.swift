@@ -8,9 +8,9 @@
 import Foundation
 import UIKit
 
-struct SpecificationItem: Decodable {
+struct SpecificationItem {
     let title: String
-    let value: String
+    let value: Any
 }
 
 class ItemCell: UITableViewCell {
@@ -19,10 +19,7 @@ class ItemCell: UITableViewCell {
 }
 
 class DetailsViewController: UITableViewController {
-    var items: [SpecificationItem] = [
-        SpecificationItem(title: "title1", value: "ram"),
-        SpecificationItem(title: "title2", value: "processor")
-    ]
+    var items: [SpecificationItem] = []
     
     override func viewDidLoad() {
     }

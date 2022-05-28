@@ -16,8 +16,24 @@ class ViewController: UIViewController {
     }
 
     @IBAction func scanButton_Pressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "showDetails", sender: self)
+        var items = [SpecificationItem]()
+        if let json = SystemServices.shared().allSystemInformation {
+            for (key, value) in json {
+                items.append(SpecificationItem(title: key as? String ?? "", value: value))
+            }
+        }
+        
+        self.performSegue(withIdentifier: "showDetails", sender: items)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let detailsVC = segue.destination as? DetailsViewController, let items = sender as? [SpecificationItem] {
+            detailsVC.items = items
+        }
+    }
+}
+
+struct DataModel {
     
 }
 
