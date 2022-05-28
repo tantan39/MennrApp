@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B403A96E2842618B0061E657 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B403A96D2842618B0061E657 /* DetailsViewController.swift */; };
+		B403A97028426DC30061E657 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B403A96F28426DC30061E657 /* ItemCell.swift */; };
 		B457490A284150F600AE963C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4574909284150F600AE963C /* AppDelegate.swift */; };
 		B457490C284150F600AE963C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457490B284150F600AE963C /* SceneDelegate.swift */; };
 		B457490E284150F600AE963C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457490D284150F600AE963C /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		6414330F13AEDBC6211C3AD5 /* Pods_mennrapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mennrapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B403A96D2842618B0061E657 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		B403A96F28426DC30061E657 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		B4574906284150F600AE963C /* mennrapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mennrapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4574909284150F600AE963C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B457490B284150F600AE963C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				B457490B284150F600AE963C /* SceneDelegate.swift */,
 				B457490D284150F600AE963C /* ViewController.swift */,
 				B403A96D2842618B0061E657 /* DetailsViewController.swift */,
+				B403A96F28426DC30061E657 /* ItemCell.swift */,
 				B457490F284150F600AE963C /* Main.storyboard */,
 				B4574912284150FA00AE963C /* Assets.xcassets */,
 				B4574914284150FA00AE963C /* LaunchScreen.storyboard */,
@@ -213,6 +216,7 @@
 				B457490A284150F600AE963C /* AppDelegate.swift in Sources */,
 				B457490C284150F600AE963C /* SceneDelegate.swift in Sources */,
 				B403A96E2842618B0061E657 /* DetailsViewController.swift in Sources */,
+				B403A97028426DC30061E657 /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

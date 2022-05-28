@@ -8,16 +8,6 @@
 import Foundation
 import UIKit
 
-struct SpecificationItem {
-    let title: String
-    let value: Any
-}
-
-class ItemCell: UITableViewCell {
-    
-    @IBOutlet weak var lblTitle: UILabel!
-}
-
 class DetailsViewController: UITableViewController {
     var items: [SpecificationItem] = []
     
