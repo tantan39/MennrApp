@@ -15,6 +15,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    // Fetching specification from local and populated to details view
+    
     @IBAction func scanButton_Pressed(_ sender: Any) {
         var items = [SpecificationItem]()
         if let json = SystemServices.shared().allSystemInformation {

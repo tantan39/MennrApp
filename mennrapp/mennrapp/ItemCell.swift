@@ -5,7 +5,7 @@
 //  Created by Tan Tan on 5/28/22.
 //
 
-import Foundation
+import UIKit
 
 struct SpecificationItem {
     let title: String
