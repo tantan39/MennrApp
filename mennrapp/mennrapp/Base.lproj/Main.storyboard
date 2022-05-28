@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6u-JV-Xvt">
-                                <rect key="frame" x="107" y="428" width="200" height="40"/>
+                                <rect key="frame" x="107" y="418" width="200" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="ERL-Vj-V9q"/>
+                                    <constraint firstAttribute="height" constant="60" id="ERL-Vj-V9q"/>
                                     <constraint firstAttribute="width" constant="200" id="fwu-Ld-nDA"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -28,6 +28,12 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Scan">
                                     <backgroundConfiguration key="background"/>
                                 </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="scanButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GzE-qh-arh"/>
                                     <segue destination="zqy-al-zjV" kind="showDetail" id="VTT-GK-tc5"/>
