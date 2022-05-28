@@ -9,6 +9,7 @@ import UIKit
 import SystemServices
 
 class ViewController: UIViewController {
+    private var storeURL: URL = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first!.appendingPathComponent("Specification.json")
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,10 @@ class ViewController: UIViewController {
         if let json = SystemServices.shared().allSystemInformation {
             for (key, value) in json {
                 items.append(SpecificationItem(title: key as? String ?? "", value: value))
+            }
+            
+            if let data = json.description.data(using: .utf8) {
+                try! data.write(to: storeURL)
             }
         }
         
