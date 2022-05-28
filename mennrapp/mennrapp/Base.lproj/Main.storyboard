@@ -30,6 +30,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="scanButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GzE-qh-arh"/>
+                                    <segue destination="zqy-al-zjV" kind="showDetail" id="VTT-GK-tc5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -45,16 +46,17 @@
             </objects>
             <point key="canvasLocation" x="114" y="76"/>
         </scene>
-        <!--View Controller-->
+        <!--Details View Controller-->
         <scene sceneID="isS-DC-FmB">
             <objects>
-                <viewController id="zqy-al-zjV" sceneMemberID="viewController">
+                <viewController id="zqy-al-zjV" customClass="DetailsViewController" customModule="mennrapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M7g-eJ-WHt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="d4D-x2-xCt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="FoP-uM-oa4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E27-DS-635" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
