@@ -16,8 +16,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func scanButton_Pressed(_ sender: Any) {
-        print("\(SystemServices.shared().allSystemInformation)")
-
+        self.performSegue(withIdentifier: "showDetails", sender: self)
     }
     
 }

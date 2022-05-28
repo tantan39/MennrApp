@@ -36,7 +36,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="scanButton_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GzE-qh-arh"/>
-                                    <segue destination="zqy-al-zjV" kind="showDetail" id="VTT-GK-tc5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -47,26 +46,32 @@
                             <constraint firstItem="n6u-JV-Xvt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uVk-Vf-Ygz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="QHi-sh-0PE" kind="show" identifier="showDetails" id="yEE-3X-sQb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="114" y="76"/>
         </scene>
         <!--Details View Controller-->
-        <scene sceneID="isS-DC-FmB">
+        <scene sceneID="2xU-cg-1U3">
             <objects>
-                <viewController id="zqy-al-zjV" customClass="DetailsViewController" customModule="mennrapp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="M7g-eJ-WHt">
+                <tableViewController id="QHi-sh-0PE" customClass="DetailsViewController" customModule="mennrapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="rEn-Wx-gsx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="d4D-x2-xCt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="FoP-uM-oa4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="E27-DS-635" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <connections>
+                            <outlet property="dataSource" destination="QHi-sh-0PE" id="X9Z-iq-cj9"/>
+                            <outlet property="delegate" destination="QHi-sh-0PE" id="jFd-Ww-mqc"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="85y-RE-dwX"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="27g-hf-fsz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1167" y="76"/>
+            <point key="canvasLocation" x="837.68115942028987" y="75.669642857142847"/>
         </scene>
     </scenes>
     <resources>
