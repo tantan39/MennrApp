@@ -13,9 +13,11 @@
 		B4574911284150F600AE963C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B457490F284150F600AE963C /* Main.storyboard */; };
 		B4574913284150FA00AE963C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4574912284150FA00AE963C /* Assets.xcassets */; };
 		B4574916284150FA00AE963C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4574914284150FA00AE963C /* LaunchScreen.storyboard */; };
+		BA7F313073F46AF50265403F /* Pods_mennrapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6414330F13AEDBC6211C3AD5 /* Pods_mennrapp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6414330F13AEDBC6211C3AD5 /* Pods_mennrapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mennrapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4574906284150F600AE963C /* mennrapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mennrapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4574909284150F600AE963C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B457490B284150F600AE963C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		B4574912284150FA00AE963C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4574915284150FA00AE963C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4574917284150FA00AE963C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7A7B3133AFE2C15ED4A8A8E /* Pods-mennrapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mennrapp.debug.xcconfig"; path = "Target Support Files/Pods-mennrapp/Pods-mennrapp.debug.xcconfig"; sourceTree = "<group>"; };
+		BE4A6143F453E1F99BCA63A4 /* Pods-mennrapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mennrapp.release.xcconfig"; path = "Target Support Files/Pods-mennrapp/Pods-mennrapp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA7F313073F46AF50265403F /* Pods_mennrapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1354B29B3B96A41EBCBB0FBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6414330F13AEDBC6211C3AD5 /* Pods_mennrapp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68792DAE6560B2361F3D4685 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7A7B3133AFE2C15ED4A8A8E /* Pods-mennrapp.debug.xcconfig */,
+				BE4A6143F453E1F99BCA63A4 /* Pods-mennrapp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B45748FD284150F600AE963C = {
 			isa = PBXGroup;
 			children = (
 				B4574908284150F600AE963C /* mennrapp */,
 				B4574907284150F600AE963C /* Products */,
+				68792DAE6560B2361F3D4685 /* Pods */,
+				1354B29B3B96A41EBCBB0FBD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B457491A284150FA00AE963C /* Build configuration list for PBXNativeTarget "mennrapp" */;
 			buildPhases = (
+				46BB85FAAE6AF5644AAF29FE /* [CP] Check Pods Manifest.lock */,
 				B4574902284150F600AE963C /* Sources */,
 				B4574903284150F600AE963C /* Frameworks */,
 				B4574904284150F600AE963C /* Resources */,
+				374B00A8C14A8F9DA2DF3511 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		374B00A8C14A8F9DA2DF3511 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mennrapp/Pods-mennrapp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mennrapp/Pods-mennrapp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mennrapp/Pods-mennrapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46BB85FAAE6AF5644AAF29FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mennrapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B4574902284150F600AE963C /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		B457491B284150FA00AE963C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7A7B3133AFE2C15ED4A8A8E /* Pods-mennrapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +382,7 @@
 		};
 		B457491C284150FA00AE963C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE4A6143F453E1F99BCA63A4 /* Pods-mennrapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
