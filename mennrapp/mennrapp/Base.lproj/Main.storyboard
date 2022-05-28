@@ -62,6 +62,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="50" id="gvG-IK-Rvl" customClass="ItemCell" customModule="mennrapp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gvG-IK-Rvl" id="fVU-vS-LBu">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZg-69-umT">
+                                            <rect key="frame" x="30" y="14.5" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="CZg-69-umT" firstAttribute="centerY" secondItem="fVU-vS-LBu" secondAttribute="centerY" id="0bK-h9-QHY"/>
+                                        <constraint firstItem="CZg-69-umT" firstAttribute="leading" secondItem="fVU-vS-LBu" secondAttribute="leading" constant="30" id="87F-tE-g6O"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="lblTitle" destination="CZg-69-umT" id="LDy-u1-hyY"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="QHi-sh-0PE" id="X9Z-iq-cj9"/>
                             <outlet property="delegate" destination="QHi-sh-0PE" id="jFd-Ww-mqc"/>

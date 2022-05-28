@@ -13,6 +13,11 @@ struct SpecificationItem: Decodable {
     let value: String
 }
 
+class ItemCell: UITableViewCell {
+    
+    @IBOutlet weak var lblTitle: UILabel!
+}
+
 class DetailsViewController: UITableViewController {
     var items: [SpecificationItem] = [
         SpecificationItem(title: "title1", value: "ram"),
@@ -20,21 +25,25 @@ class DetailsViewController: UITableViewController {
     ]
     
     override func viewDidLoad() {
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        1
-    }
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         items.count
     }
     
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let item = items[section]
+        return item.title
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        1
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
-        let item = items[indexPath.row]
-        print("\(item.title) -- \(item.value)")
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath) as? ItemCell else { return UITableViewCell() }
+        let item = items[indexPath.section]
+        cell.lblTitle.text = "\(item.value)"
         return cell
     }
 }
