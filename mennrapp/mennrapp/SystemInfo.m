@@ -54,9 +54,6 @@ static natural_t get_memory_used (void)
     natural_t mem_used = (vm_stat.active_count +
                           vm_stat.inactive_count +
                           vm_stat.wire_count) * pagesize;
-//    natural_t mem_free = vm_stat.free_count * pagesize;
-//    natural_t mem_total = mem_used + mem_free;
-//    NSLog(@"used: %u free: %u total: %u", mem_used, mem_free, mem_total);
     return mem_used;
 }
 
@@ -77,12 +74,7 @@ static natural_t get_memory_free (void)
     }
 
     /* Stats in bytes */
-//    natural_t mem_used = (vm_stat.active_count +
-//                          vm_stat.inactive_count +
-//                          vm_stat.wire_count) * pagesize;
     natural_t mem_free = vm_stat.free_count * pagesize;
-//    natural_t mem_total = mem_used + mem_free;
-//    NSLog(@"used: %u free: %u total: %u", mem_used, mem_free, mem_total);
     return mem_free;
 }
 
